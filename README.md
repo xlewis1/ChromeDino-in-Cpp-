@@ -29,8 +29,8 @@ A C++ remake of the classic Chrome Dino game, featuring embedded PNG assets and 
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/yourusername/ChromeDinoCplusplus.git
-cd ChromeDinoCplusplus
+git clone https://github.com/yourusername/ChromeDino-in-Cpp-.git
+cd ChromeDino-in-Cpp-
 
 2.	Compile the game:
 
