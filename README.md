@@ -34,6 +34,8 @@ cd ChromeDino-in-Cpp-
 
 2.	Compile the game:
 
+for MacOS:
+
 clang++ -std=c++17 -Wall main.cpp -o ChromeDino \
     -I/opt/homebrew/include \
     -L/opt/homebrew/lib -lraylib \
@@ -42,9 +44,23 @@ clang++ -std=c++17 -Wall main.cpp -o ChromeDino \
     -framework CoreFoundation -framework CoreGraphics \
     -framework CoreMedia
 
-3.	Run the game:
+for Windows:
+
+g++ -std=c++17 -Wall main.cpp -o ChromeDino.exe -lraylib -lopengl32 -lgdi32 -lwinmm
+
+
+for Linux:
+
+g++ -std=c++17 -Wall main.cpp -o ChromeDino -lraylib -lGL -lm -lpthread -ldl -lrt -lX11
+
+
+3.	Run the game on MacOS & Linux:
 
 ./ChromeDino
+
+and how to run on Windows:
+
+ChromeDino.exe
 
 The embedded .h files contain all the PNG assets, so no external images are needed.
 
